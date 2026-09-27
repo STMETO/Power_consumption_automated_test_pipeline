@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1600" viewBox="0 0 1600 1600">
+<title>功耗自动化测试流水线</title>
+<desc>依据现有 Python 代码整理：配置与 OTA、逐挡位温控及模式分支、QEPM 采集、Excel 处理、归档与飞书通知。</desc>
+<rect x="0" y="0" width="1600" height="1600" rx="0" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="72" y="79" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="54" font-weight="700" fill="#172D46">功耗自动化测试流水线</text>
+<text x="74" y="133" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="400" fill="#41566F">配置驱动  ·  多固件队列  ·  多挡位测试  ·  自动汇总</text>
+<text x="76" y="188" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#356CAB">01  启动与设备准备</text>
+<rect x="65" y="375" width="1470" height="843" rx="18" fill="#FAFCFE" stroke="#D3DFEA" stroke-width="2"/>
+<text x="90" y="408" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#227C78">02  逐挡位执行</text>
+<text x="90" y="449" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">单挡位 / 全部挡位</text>
+<text x="76" y="1280" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#7460A4">03  结果归档与通知</text>
+<polyline points="510,280 580,280" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="580,280 567.0,274.5 567.0,285.5" fill="#607890"/>
+<polyline points="1000,280 1070,280" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="1070,280 1057.0,274.5 1057.0,285.5" fill="#607890"/>
+<polyline points="1280,341 1280,362 800,362 800,430" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="800,430 805.5,417.0 794.5,417.0" fill="#607890"/>
+<polyline points="800,522 800,548" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="800,548 805.5,535.0 794.5,535.0" fill="#607890"/>
+<polyline points="680,610 305,610 305,700" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="305,700 310.5,687.0 299.5,687.0" fill="#607890"/>
+<polyline points="800,672 800,700" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="800,700 805.5,687.0 794.5,687.0" fill="#607890"/>
+<polyline points="920,610 1295,610 1295,700" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="1295,700 1300.5,687.0 1289.5,687.0" fill="#607890"/>
+<polyline points="305,810 305,838 680,838 680,866" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="680,866 685.5,853.0 674.5,853.0" fill="#607890"/>
+<polyline points="800,810 800,866" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="800,866 805.5,853.0 794.5,853.0" fill="#607890"/>
+<polyline points="1295,810 1295,838 920,838 920,866" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="920,866 925.5,853.0 914.5,853.0" fill="#607890"/>
+<polyline points="800,970 800,1003" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="800,1003 805.5,990.0 794.5,990.0" fill="#607890"/>
+<polyline points="1150,1058 1240,1058" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="1240,1058 1227.0,1052.5 1227.0,1063.5" fill="#607890"/>
+<polyline points="1350,996 1350,935 1505,935 1505,476 1120,476" fill="none" stroke="#227C78" stroke-width="3" stroke-linejoin="round" />
+<polygon points="1120,476 1133.0,481.5 1133.0,470.5" fill="#227C78"/>
+<polyline points="1350,1120 1350,1242 475,1242 475,1310" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="475,1310 480.5,1297.0 469.5,1297.0" fill="#607890"/>
+<polyline points="510,1376 580,1376" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="580,1376 567.0,1370.5 567.0,1381.5" fill="#607890"/>
+<polyline points="1000,1376 1070,1376" fill="none" stroke="#607890" stroke-width="3" stroke-linejoin="round" />
+<polygon points="1070,1376 1057.0,1370.5 1057.0,1381.5" fill="#607890"/>
+<rect x="90" y="220" width="420" height="121" rx="12" fill="#F0F5FC" stroke="#356CAB" stroke-width="2"/>
+<text x="300.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">界面 / 命令行启动</text>
+<text x="300.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">选择设备、固件与挡位</text>
+<text x="300.0" y="316.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">读取 JSON 测试配置</text>
+<rect x="580" y="220" width="420" height="121" rx="12" fill="#F0F5FC" stroke="#356CAB" stroke-width="2"/>
+<text x="790.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">固件检查与 OTA</text>
+<text x="790.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">按需下载、升级并校验</text>
+<text x="790.0" y="316.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">未配置 / 版本相同则跳过</text>
+<rect x="1070" y="220" width="420" height="121" rx="12" fill="#F0F5FC" stroke="#356CAB" stroke-width="2"/>
+<text x="1280.0" y="247.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">设备环境准备</text>
+<text x="1280.0" y="283.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">检查用户模式、清理视频</text>
+<text x="1280.0" y="316.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">配置开关、启动控制服务</text>
+<rect x="480" y="430" width="640" height="92" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="800.0" y="459.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">选择挡位 · 检查温度</text>
+<text x="800.0" y="495.0" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">后续挡位低于 55°C 再测；首挡跳过</text>
+<polygon points="800.0,548 920,610.0 800.0,672 680,610.0" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="800" y="610" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="#172D46">测试模式</text>
+<rect x="105" y="700" width="400" height="110" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="305.0" y="721.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">录制模式</text>
+<text x="305.0" y="757.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">短录视频 → 拉取解析</text>
+<text x="305.0" y="790.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">校验分辨率 / 帧率</text>
+<rect x="600" y="700" width="400" height="110" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="800.0" y="721.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">预览模式</text>
+<text x="800.0" y="757.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">设置相机挡位</text>
+<text x="800.0" y="790.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">保持预览，不开启录制</text>
+<rect x="1095" y="700" width="400" height="110" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="1295.0" y="721.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">关机充电模式</text>
+<text x="1295.0" y="757.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">进入关机充电状态</text>
+<text x="1295.0" y="790.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">等待设备休眠</text>
+<rect x="399.0" y="821" width="120" height="34" rx="4" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="459" y="838" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#41566F">校验通过</text>
+<rect x="450" y="866" width="700" height="104" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="800.0" y="884.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">QEPM 自动采集功耗</text>
+<text x="800.0" y="920.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">配置通道 · 关闭 USB 供电 · 按时长采集</text>
+<text x="800.0" y="953.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">停止采集 → 下载原始 CSV</text>
+<rect x="450" y="1003" width="700" height="110" rx="12" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="800.0" y="1024.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">处理本挡位数据</text>
+<text x="800.0" y="1060.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">CSV 导入 Excel 模板</text>
+<text x="800.0" y="1093.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">读取负载端、电池端及模块功耗</text>
+<polygon points="1350.0,996 1460,1058.0 1350.0,1120 1240,1058.0" fill="#EDF8F6" stroke="#227C78" stroke-width="2"/>
+<text x="1350" y="1058" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#172D46">还有挡位？</text>
+<rect x="1240.0" y="459" width="170" height="34" rx="4" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="1325" y="476" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#227C78">是：下一挡位</text>
+<rect x="1327.5" y="1222" width="45" height="34" rx="4" fill="#FFFFFF" stroke="none" stroke-width="2"/>
+<text x="1350" y="1239" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#41566F">否</text>
+<text x="97" y="1157" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">温控：每 10s 检查，最多等待 300s；超时跳过当前挡位。</text>
+<text x="97" y="1195" text-anchor="start" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">挡位异常：记录错误，批量测试继续下一挡位；最终汇总失败状态。</text>
+<rect x="90" y="1310" width="420" height="132" rx="12" fill="#F4F1FA" stroke="#7460A4" stroke-width="2"/>
+<text x="300.0" y="1342.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">结果落盘与环境恢复</text>
+<text x="300.0" y="1378.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">保存结果 JSON、错误信息</text>
+<text x="300.0" y="1411.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">清理控制服务、关闭浏览器</text>
+<rect x="580" y="1310" width="420" height="132" rx="12" fill="#F4F1FA" stroke="#7460A4" stroke-width="2"/>
+<text x="790.0" y="1342.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">汇总各挡位 Excel</text>
+<text x="790.0" y="1378.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">按固件日期归档测试数据</text>
+<text x="790.0" y="1411.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">生成挡位表与总汇总表</text>
+<rect x="1070" y="1310" width="420" height="132" rx="12" fill="#F4F1FA" stroke="#7460A4" stroke-width="2"/>
+<text x="1280.0" y="1342.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#172D46">飞书同步与通知</text>
+<text x="1280.0" y="1378.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">同步汇总文件夹</text>
+<text x="1280.0" y="1411.5" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#41566F">发送功耗、状态及数据链接</text>
+<rect x="65" y="1480" width="1470" height="74" rx="12" fill="#F0F4F8" stroke="none" stroke-width="2"/>
+<text x="800" y="1517" text-anchor="middle" dominant-baseline="central" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#41566F">GUI 固件队列：每个固件重复以上流程，队列结束后统计成功 / 失败</text>
+</svg>
